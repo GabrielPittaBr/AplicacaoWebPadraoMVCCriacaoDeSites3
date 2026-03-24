@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <title><%= title %></title>
     <script src="/js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="flex flex-col min-h-screen">
 
-<header>
-    <h2>Meu Site</h2>
-    <nav>
-        <ul>
-            <li><a href="/index">Home</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/contato">Contato</a></li>
-            <li><a href="/produtos">CRUD</a></li>
-        </ul>
-    </nav>
+<header class="bg-gradient-to-r from-green-600 to-emerald-500 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <h2 class="text-2xl font-bold text-white tracking-wide">
+            Gabriel Pitta
+        </h2>
+
+        <nav>
+            <ul class="flex gap-6 text-white font-medium">
+                <li><a href="/" class="hover:text-green-200 transition">Home</a></li>
+                <li><a href="/sobre" class="hover:text-green-200 transition">Sobre</a></li>
+                <li><a href="/contato" class="hover:text-green-200 transition">Contato</a></li>
+                <li>
+                    <a href="/produtos" 
+                       class="bg-white text-green-600 px-4 py-2 rounded-xl font-semibold hover:bg-green-100 transition shadow">
+                       CRUD
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
 </header>
