@@ -1,11 +1,11 @@
 <%- include('partials/header') %>
 
-<main class="flex-grow max-w-4xl mx-auto px-6 py-10">
+<main class="flex-grow flex flex-col items-center pt-24 px-6">
 
     <h1 class="text-3xl font-bold mb-6">Editar Produto</h1>
 
     <form action="/produtos/edit/<%= produto.id %>" method="POST"
-          class="bg-white p-6 rounded-2xl shadow-md grid gap-4">
+          class="w-full max-w-2xl bg-white p-6 rounded-2xl shadow-md grid gap-4">
 
         <input type="text" name="nome" value="<%= produto.nome %>" required
             class="border p-3 rounded-lg focus:ring-2 focus:ring-green-500">
